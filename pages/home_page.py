@@ -236,7 +236,7 @@ class HomePage(QMainWindow):
 
                 # Check, if image dont over ICO limit
                 if original_size[0] > 256 or original_size[1] > 256:
-                    # The thumbnail method proportionally compresses the image to 256 by the long side
+                    # The thumbnail method proportionally compresses the image to 256 by the long side.
                     img.thumbnail((256, 256), Image.Resampling.LANCZOS)
                     icon_size = [img.size]  # New size
                 else:
