@@ -113,7 +113,7 @@ class HomePage(QMainWindow):
     Adds images that the user has selected and automatically checks them.
     """
     def add_images(self):
-        files, _ = QFileDialog.getOpenFileNames(self, "Select images", "", "Images (*.png *.jpg)")
+        files, _ = QFileDialog.getOpenFileNames(self, "Select images", "", "Images (*.png *.jpg *jpeg)")
 
         if files:
             current_items = self.get_all_images()
