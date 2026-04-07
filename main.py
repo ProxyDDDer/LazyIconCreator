@@ -1,12 +1,10 @@
 import ctypes
-from idlelib import window
 
-from PIL import Image
 from PySide6.QtWidgets import QApplication
 import sys
 
 from core.version import get_version
-from pages.home_page import HomePage
+from ui.pages.home_page import HomePage
 
 # img = Image.open("image.png")
 
